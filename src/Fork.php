@@ -74,10 +74,6 @@ class Fork
         if (!function_exists('pcntl_fork')) {
             throw new Exception('请先安装pcntl扩展');
         }
-
-        if (PHP_SAPI !== 'cli') {
-            throw new Exception('仅支持CLI模式');
-        }
     }
 }
 

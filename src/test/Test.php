@@ -13,18 +13,18 @@ class Test
 {
     public function demo()
     {
-        $filename = rand() * 100 . '_demo.xls';
+        $filename = rand() . '_demo.xls';
         $data = [
             // 第一个sheet内容
             [
                 ['第一列','第二列'],
-                ['123', '123'],
-                ['456', '456']
+                ['第一个sheet第一列内容', '第一个sheet第二列内容'],
+                ['第一个sheet第一列内容', '第一个sheet第二列内容'],
             ],
             // 第二个sheet内容
             [
                 ['第一列','第二列'],
-                ['123', '123'],
+                ['第二个sheet第一列内容', '第二个sheet第二列内容'],
             ]
         ];
         $sheets = ['demo_sheetA', 'demo_sheetB'];
